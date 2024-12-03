@@ -1,0 +1,110 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #f7f3ea;
+  border-bottom: 2px solid #d6c7b9;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #5e3023;
+  text-decoration: none;
+}
+
+.bookmarks-link {
+  color: #5e3023;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+/* 
+trending books */
+
+.trending-container {
+  padding: 20px;
+  background-color: #f7f3ea;
+}
+
+h2 {
+  font-family: "Georgia", serif;
+  color: #5e3023;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.book-card {
+  text-align: center;
+  text-decoration: none;
+  color: #5e3023;
+}
+
+.book-card img {
+  width: 128px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.book-card p {
+  margin-top: 5px;
+}
+
+.search-container {
+  text-align: center;
+  padding: 20px;
+  background-color: #f7f3ea;
+}
+
+.search-container h1 {
+  font-family: "Georgia", serif;
+  font-size: 36px;
+  color: #5e3023;
+  margin-bottom: 10px;
+}
+
+.search-container p {
+  color: #7b4d40;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.search-bar input {
+  width: 300px;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+}
+
+.search-bar button {
+  padding: 8px 12px;
+  font-size: 16px;
+  background-color: #5e3023;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 0 4px 4px 0;
+}
+
+.search-bar button:hover {
+  background-color: #7b4d40;
+}
