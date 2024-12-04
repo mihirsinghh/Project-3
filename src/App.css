@@ -112,10 +112,10 @@ h2 {
   border-radius: 15px 0 0 15px;
 }
 
-.search-bar:active {
+/* .search-bar:active {
   border: 1px solid #ccc;
   box-shadow: 0 0px 0px 0 #ffeec7, 0 0px 10px 0 #ffeec7;
-}
+} */
 
 .search-bar button {
   padding: 8px 12px;
