@@ -1,4 +1,5 @@
 body {
+  background-color: #f7f3ea;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -29,6 +30,7 @@ body {
 .navbar a:hover {
   text-decoration: underline;
 }
+
 /* 
 trending books */
 
@@ -38,6 +40,7 @@ trending books */
 }
 
 h2 {
+  /* background-color: #f7f3ea; */
   font-family: "Georgia", serif;
   color: #5e3023;
 }
@@ -45,7 +48,7 @@ h2 {
 .book-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 20px;
+  gap: 70px;
 }
 
 .book-card {
@@ -64,6 +67,17 @@ h2 {
   margin-top: 5px;
 }
 
+.book-grid a {
+  text-decoration: none;
+  color: black;
+}
+
+.book-grid a:hover {
+  text-decoration: underline;
+  color: #7b4d40;;
+}
+
+/* search  */
 .search-container {
   text-align: center;
   padding: 20px;
@@ -80,6 +94,8 @@ h2 {
 .search-container p {
   color: #7b4d40;
 }
+
+/* search bar */
 
 .search-bar {
   display: flex;
@@ -107,4 +123,54 @@ h2 {
 
 .search-bar button:hover {
   background-color: #7b4d40;
+}
+
+/* search results */
+
+.search-results {
+  background-color: #f7f3ea;
+}
+
+/* add favorites button */
+button {
+  /* background-color: #FFFFFF;
+  border: 1px solid #222222; */
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #222222;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  padding: 13px 23px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
+  user-select: none;
+  -webkit-user-select: none;
+  width: auto;
+}
+
+button:focus-visible {
+  box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+  transition: box-shadow .2s;
+}
+
+button:active {
+  background-color: #F7F7F7;
+  border-color: #000000;
+  transform: scale(.96);
+}
+
+button:disabled {
+  border-color: #DDDDDD;
+  color: #DDDDDD;
+  cursor: not-allowed;
+  opacity: 1;
 }

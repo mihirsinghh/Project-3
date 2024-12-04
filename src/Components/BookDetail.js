@@ -3,14 +3,19 @@ import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
 
 const BookDetail = ({ books, onBookmark }) => {
+  // book id
   const { id } = useParams();
+  // navigate
   const navigate = useNavigate();
+  // get book
   const book = books.find((b) => b.key === id);
 
+  // if book wasn't found, return this message
   if (!book) {
     return <p>Book not found</p>;
   }
 
+  // handle bookmark action
   const handleBookmark = () => {
     onBookmark(book);
     alert("Book added to bookmarks!");

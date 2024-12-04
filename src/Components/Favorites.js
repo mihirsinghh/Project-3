@@ -7,6 +7,7 @@ const Favorites = ({ favorites, setFavorites }) => {
     setFavorites(favorites.filter((book) => book.key !== bookKey));
   };
 
+  // if no books were added to favorites, print this
   if (!favorites || favorites.length === 0) {
     return <p>No favorite books added yet.</p>;
   }
@@ -14,6 +15,7 @@ const Favorites = ({ favorites, setFavorites }) => {
   return (
     <div className="favorites">
       <h2>Your Favorite Books</h2>
+      {/* show favorite books info (cover, title, author, summary) */}
       <div className="book-grid">
         {favorites.map((book) => (
           <div className="book-card" key={book.key}>
@@ -31,6 +33,7 @@ const Favorites = ({ favorites, setFavorites }) => {
                 {book.first_sentence ? book.first_sentence[0] : "No summary available."}
               </p>
             </div>
+            {/* add a delete button */}
             <button onClick={() => handleDelete(book.key)}>Delete</button>
           </div>
         ))}
