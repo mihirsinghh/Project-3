@@ -1,3 +1,7 @@
+* {
+  font-family: Garamond;
+}
+
 body {
   background-color: #f7f3ea;
   font-family: Arial, sans-serif;
@@ -19,6 +23,7 @@ body {
   font-weight: bold;
   color: #5e3023;
   text-decoration: none;
+
 }
 
 .bookmarks-link {
@@ -28,7 +33,7 @@ body {
 }
 
 .navbar a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /* 
@@ -135,6 +140,7 @@ h2 {
 
 .search-results {
   background-color: #f7f3ea;
+  margin: 32px;
 }
 
 
@@ -181,3 +187,5 @@ button:disabled {
   cursor: not-allowed;
   opacity: 1;
 }
+
+

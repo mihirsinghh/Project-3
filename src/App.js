@@ -45,10 +45,18 @@ const App = () => {
             placeholder="Search Books..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
+            onKeyDown={(e) => {
+              if (e.key === "Enter") {
+                handleSearch();
+              }
+            }}
           />
-          <button class="search-input-btn" onClick={handleSearch}>🔍</button>
+          <button className="search-input-btn" onClick={handleSearch}>
+            🔍
+          </button>
         </div>
       </div>
+      
       <Routes>
         <Route path="/" element={<TrendingBooks />} />
         <Route
