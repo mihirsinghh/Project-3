@@ -46,7 +46,7 @@ const App = () => {
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
           />
-          <button onClick={handleSearch}>🔍</button>
+          <button class="search-input-btn" onClick={handleSearch}>🔍</button>
         </div>
       </div>
       <Routes>

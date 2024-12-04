@@ -108,7 +108,13 @@ h2 {
   padding: 8px;
   font-size: 16px;
   border: 1px solid #ccc;
-  border-radius: 4px 0 0 4px;
+  box-shadow: 0 0px 0px 0 #ffeec7, 0 0px 10px 0 #ffeec7;
+  border-radius: 15px 0 0 15px;
+}
+
+.search-bar:active {
+  border: 1px solid #ccc;
+  box-shadow: 0 0px 0px 0 #ffeec7, 0 0px 10px 0 #ffeec7;
 }
 
 .search-bar button {
@@ -118,7 +124,7 @@ h2 {
   color: white;
   border: none;
   cursor: pointer;
-  border-radius: 0 4px 4px 0;
+  border-radius: 0 15px 15px 0;
 }
 
 .search-bar button:hover {
@@ -131,13 +137,14 @@ h2 {
   background-color: #f7f3ea;
 }
 
+
 /* add favorites button */
 button {
-  /* background-color: #FFFFFF;
-  border: 1px solid #222222; */
+  background-color: #f7f3ea;
+  /* border: 1px solid #222222; */
   border-radius: 8px;
   box-sizing: border-box;
-  color: #222222;
+  /* color: #222222; */
   cursor: pointer;
   display: inline-block;
   font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
@@ -157,20 +164,20 @@ button {
   width: auto;
 }
 
-button:focus-visible {
+/* button:focus-visible {
   box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
   transition: box-shadow .2s;
-}
+} */
 
 button:active {
-  background-color: #F7F7F7;
-  border-color: #000000;
+  /* background-color: #F7F7F7;
+  border-color: #000000; */
   transform: scale(.96);
 }
 
 button:disabled {
-  border-color: #DDDDDD;
-  color: #DDDDDD;
+  /* border-color: #DDDDDD;
+  color: #DDDDDD; */
   cursor: not-allowed;
   opacity: 1;
 }
